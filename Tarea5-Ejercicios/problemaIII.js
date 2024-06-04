@@ -8,8 +8,8 @@ let usuario = {
         numero: 25,
     },
     estado: true,
-    recuperarClave: function (){
-        console.log('Recuperar clave para');
+    cambiarDireccion: function (){
+        console.log('Actualiza tus datos');
     },
 };
 
@@ -23,8 +23,8 @@ let usuario1 = {
     numero: 15,
     },
     estado: true,
-    recuperarClave: function (){
-        console.log('Recuperar clave para');
+    cambiarDireccion: function (){
+        console.log('Actualiza tus datos');
     },
 };
 
@@ -38,8 +38,8 @@ let usuario2 = {
     numero: 5,
     },
     estado: true,
-    recuperarClave: function (){
-        console.log('Recuperar clave para');
+    cambiarDireccion: function (){
+        console.log('Actualiza tus datos');
     },
 };
 
@@ -53,8 +53,8 @@ let usuario3 = {
     numero: 35,
     },
     estado: true,
-    recuperarClave: function (){
-        console.log('Recuperar clave para');
+    cambiarDireccion: function (){
+        console.log('Actualiza tus datos');
     },
 };
 
@@ -68,8 +68,8 @@ let usuario4 = {
     numero: 45,
     },
     estado: true,
-    recuperarClave: function (){
-        console.log('Recuperar clave para');
+    cambiarDireccion: function (){
+        console.log('Actualiza tus datos');
     },
 };
 
@@ -83,20 +83,52 @@ let usuario5 = {
     numero: 55,
     },
     estado: true,
-    recuperarClave: function (){
-        console.log('Recuperar clave para');
+    cambiarDireccion: function (){
+        console.log('Actualiza tus datos');
     },
 };
 
+agregarIdentificacion = function () {
+    usuario.DPI='8477099037186'
+    usuario1.DPI='2908275070398'
+    usuario2.DPI='2116579469040'
+    usuario3.DPI='7212357620378'
+    usuario4.DPI='7824927525199'
+    usuario5.DPI='7059663695593'
+}
+
+cambiaDireccion = function(){
+    usuario.direccion.municipio="Guatemala"
+    usuario.direccion.calle="6ta Av"
+    usuario.direccion.numero="24"
+    usuario1.direccion.municipio="Quetzaltenango"
+    usuario1.direccion.calle="1ra Calle"
+    usuario1.direccion.numero="81"
+    usuario2.direccion.municipio="Guatemala"
+    usuario2.direccion.calle="2da Av"
+    usuario2.direccion.numero="83"
+    usuario3.direccion.municipio="Mixco"
+    usuario3.direccion.calle="8va Calle"
+    usuario3.direccion.numero="14"
+    usuario4.direccion.municipio="Villa Nueva"
+    usuario4.direccion.calle="9na Ave"
+    usuario4.direccion.numero="32"
+    usuario5.direccion.municipio="San Miguel Petpa"
+    usuario5.direccion.calle="17 Ave"
+    usuario5.direccion.numero="4"
+}
 let usuarios = [usuario, usuario1, usuario2, usuario3, usuario4, usuario5];
+
+let mostrarLog = function(){
 for (let i = 0; i < usuarios.length; i++) {
     let usuario = usuarios[i];
     console.log(`Usuario ${i + 1}:`);
     console.log(`Nombre: ${usuario.nombre}`);
     console.log(`Apellido: ${usuario.apellido}`);
+    console.log(`DPI: ${usuario.DPI}`);
     console.log(`Email: ${usuario.email}`);
     console.log(`Dirección: ${usuario.direccion.municipio}, ${usuario.direccion.calle}, ${usuario.direccion.numero}`);
     console.log(`Estado: ${usuario.estado}`);
-    usuario.recuperarClave();
-    console.log(usuario.nombre);
-}
+    usuario.cambiarDireccion
+        console.log(usuario.nombre);
+}}

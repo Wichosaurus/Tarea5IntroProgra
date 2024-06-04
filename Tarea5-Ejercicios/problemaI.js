@@ -85,5 +85,5 @@ usuarios.forEach((usuario, index) => {
 });
 
 usuarios.forEach ((usuario, index) => {
-    usuario.enviarMensaje(`Cambio tu contrasena hoy ${usuario.nombre}`);
+    usuario.enviarMensaje(`Cambia tu contrasena hoy ${usuario.nombre}`);
 });
